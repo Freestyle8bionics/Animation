@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        margin-top: 0;
+    }
+  
+    a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #0056b3;
+    }
+  
+    /* Header styling */
+    header {
+        background-color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+  
+    header p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #666;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.character .Character {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Character > div {
+    flex: auto;
+}
+
+.Character .head {
+    position: relative;
+    background-color: gold;
+}
+
+.Character .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Character .eyes {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Character .left-eye, .Character .right-eye {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.Character .mask {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.Character .hair {
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    background-color: purple;
+}
+
+.Character .cbody {
+    display: flex;
+}
+
+.Character .front {
+    flex: 1;
+    background: linear-gradient(to bottom, blue 50%, yellow 50%);
+    position: relative;
+}
+
+.Character .front::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: lime;
+}
+
+.Character .back {
+    flex: 1;
+    background-color: red;
+    position: relative;
+}
+
+.Character .logo::before {
+    content: 'FB';
+}
+
+.Character .legs {
+    display: flex;
+}
+
+.Character .left-leg {
+    flex: 1;
+    background-color: blue;
+}
+
+.Character .right-leg {
+    flex: 1;
+    background-color: cyan;
+}
+
